@@ -1,0 +1,85 @@
+@use './abstracts' as *;
+
+.step-modal, .step-title{
+    background-color: rgba( 43,43,64,1);
+    color: white;
+}
+.step-modal{
+    padding: 3.5rem;
+}
+.step-modal ol li {
+    color: $white;
+    // line-height:25px;
+    padding-bottom: 10px;
+}
+.bg-info{
+    background-color: purple !important;
+}
+.bg-light{
+    background-color: rgb(50, 137, 187) !important;
+}
+.bullet-vertical {
+    width: 4px;
+    height: 8px;
+}
+
+.bullet {
+    display: inline-block;
+    background-color: #474761;
+    border-radius: 6px;
+    width: 8px;
+    height: 10px;
+    flex-shrink: 0;
+}
+.activation{
+    position: relative;
+    margin: 150px 0;
+    padding: 5rem 0;
+    // height: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/bg5.png);
+
+    @media screen and (max-width: 768px) {
+        padding: 7.5rem 0;
+    }
+}
+.content-1{
+    border: 1px dashed #ffffff;
+    border-radius: 0.475rem!important;
+    padding: 2.25rem!important;
+    margin-bottom: 2.5rem!important;
+    color: $white;
+
+    span{
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+// Helpers
+.pad{
+    padding: 0 70px;
+    @media screen and (max-width: 450px) {
+        padding: 0 20px ;
+
+    }
+
+}
+.dec{
+    text-decoration: none;
+}
+.red{
+    color: $primary-color;
+}
+
+.gap-custom{
+    gap: 5rem;
+    @media screen and (max-width: 450px) {
+        gap: 4rem;
+    }
+}

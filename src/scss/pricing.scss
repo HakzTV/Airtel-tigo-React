@@ -1,0 +1,143 @@
+@use './abstracts' as *;
+
+.pricing-container {
+    margin: 20px 0;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/bg5.png);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+
+    
+    .pricing-card {
+    
+      padding: 20px;
+      background-color: $white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border-radius: 10px;
+  
+     
+      h2 {
+        margin-top: 0;
+      }
+  
+      h3 {
+        margin: 10px 0;
+        font-size: 2em;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        font-size: 1.2em;
+  
+        li {
+          margin: 5px 0;
+        }
+       
+      }
+  
+      .buy-button {
+        // display: block;
+        width: 40%;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px 0;
+        border: none;
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+  
+        &:hover {
+          background-color: darkred;
+        }
+      }
+    }
+  }
+
+  .separator {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+    @media screen and (max-width: 600px) {
+        &{
+
+            padding: 0 50px;
+        }
+    }
+
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      height: 1px;
+      background-color: red;
+      border-bottom: 1px dashed rgb( 43,43,64);
+    }
+  
+    &::before {
+      transform: translateX(-5px);
+      width: 45%;
+    }
+  
+    &::after {
+      transform: translateX(175px);
+      width: 45%;
+    }
+  
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+// Helpers
+.pe-3{
+    padding-right: 5rem !important;
+}
+.fs-3x {
+    font-size: calc(1.425rem + 2.1vw)!important;
+}
+.t-bold{
+  font-weight: bold;
+}
+.dyni{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.blue:after {
+    content: '';
+    width: 19px;
+    height: 0.145em;
+    border-radius: 30px;
+    background: #ed192b;
+    position: absolute;
+    bottom: -4px;
+    left: 1px;
+}
+.f-s{
+    font-size: 12px;
+}
+.f-s1{
+    font-size: 1.7rem;
+}
+.stars svg{
+    width: 15px;
+    color: #ed192b;
+}

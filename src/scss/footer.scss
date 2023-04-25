@@ -1,0 +1,67 @@
+// Importing global variables
+
+@use './abstracts' as *;
+
+// Footer Styling
+.footer{
+    position: relative;
+    top: -70px;
+
+    .footer-content{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        
+        .footer-links{
+        //     display: flex;
+        // justify-content: space-evenly;
+        // width: 100%;
+        .links  {
+            list-style-type: none;
+            
+            & a{
+                text-decoration: none;
+                margin-right: 15px;
+                color: rgba($color: $navbar-link-color, $alpha: 0.8);
+                // font-weight: bold;
+            }
+            @media screen and (max-width: 450px) {
+                width: 100%;
+            }
+        }
+        }
+      
+        
+        .logo{
+            display: block;
+            @media screen and (max-width: 650px) {
+                display: none;
+            }
+        }
+        .logo2{
+            display: none;
+        
+            @media screen and (max-width: 650px) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .footer__logo{
+            height: 40px;
+            
+            @media screen and (max-width: 450px) {
+                height: 25px;
+            }
+        }
+        @media screen and (max-width: 650px) {
+            flex-wrap: wrap;
+           
+        }
+    }
+}
+// Helpers  
+.fs-6{
+    font-size: 1.075rem;
+}

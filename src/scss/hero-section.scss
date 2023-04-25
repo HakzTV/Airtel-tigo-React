@@ -1,0 +1,37 @@
+@use './abstracts' as *;
+
+
+
+  .carousel-indicator-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-indicator-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .carousel-indicator-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.6);
+      margin: 0 6px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+  
+      &.active {
+        background-color: $white;
+      }
+    }
+  }
