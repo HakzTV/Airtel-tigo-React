@@ -86,7 +86,7 @@ function Header() {
       <Modal.Header closeButton style={{ backgroundImage:`url(${bg})` }}>
         <Modal.Title className='text-white' >Register for AirtelTigo eSIM</Modal.Title>
       </Modal.Header>
-      <Modal.Body className='bg-white'>
+      <Modal.Body className='bg-white' style={{backgroundColor: "#fff"}}>
         <p>
         Welcome to the AirtelTigo eSIM registration portal. This allows you to get your eSIM QR code from the comfort of your home.
 Follow the steps below to complete the process.

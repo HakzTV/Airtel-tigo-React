@@ -228,6 +228,10 @@ body{
   }
  
   }
+  .modal-header{
+    background-image: url(../assets/bg5.png);
+    color: white;
+  }
 
   .modal-dialog{
     // max-width: 500px
@@ -236,5 +240,6 @@ body{
     .modal-body{
       // background-color: rgb(30, 30, 45,); /* Darkish blue color with 50% opacity */
       color: black;
+      background-color: #fff;
     }
   }
